@@ -1,0 +1,125 @@
+.navbar {
+    background-color: #070e16;
+    height: 70px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: #009970;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+.cadastro-button,
+.encomende-button {
+    background-color: blue;
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.cadastro-button:hover,
+.encomende-button:hover {
+    background-color: #00b383;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+    
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    position: relative;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: white;
+}
+
+.offcanvas-body,
+.offcanvas-header {
+    background-color: #070e16;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: white;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #009970;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+.secao-principal {
+    background: url(images/ASTONMARTIN.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.secao-principal::before {
+    background-color: rgba(0, 0, 0, 0.7);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.secao-principal .container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.secao-principal h2 {
+    font-size: 1.2em;
+}
+
+.secao-principal h3 {
+    font-size: 1.0em;
+}
+
+.footer {
+    background-color: #070e16;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    height: 40px;
+}
+
+
+
+

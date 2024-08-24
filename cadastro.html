@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleDois.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>CADASTRO</title>
+</head>
+<body>
+
+    <!--NAVBAR SITE-->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand me-auto" href="index.html">
+        <img src="images/logobranca.png" alt="logo" width="100">
+      </a>
+
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="images/logobranca.png" alt="logo" width="100">
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active mx-lg-2" aria-current="page" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">Sobre nós</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="cadastro.html" class="cadastro-button mx-lg-2">CADASTRE-SE</a>
+      <button class="navbar-toggler pe-B" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </div>
+  </nav>
+  <!--FINAL NAVBAR-->
+
+    <!--FORMULÁRIO CADASTRO-->
+    <div class="container-fluid">
+        <form class="mx-auto">
+            <h4 class="text-center">CADASTRO</h4>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+            </div>
+            <div class="mb-3">
+                <label for="dataAniversario" class="form-label">Data de Aniversário</label>
+                <input type="date" class="form-control" id="dataAniversario">
+            </div>
+            <div class="mb-3">
+                <label for="cpf" class="form-label">CPF</label>
+                <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF">
+            </div>
+            <div class="mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    <!--FIM FORMULÁRIO CADASTRO-->
+
+    <!--FOOTER-->
+  <footer class="footer">
+    <p>© 2024 Zaquel Cars. Todos os direitos reservados.</p>
+  </footer>
+  <!--FIM DO FOOTER-->
+   
+  <!--BOOTSTRAP-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!--FIM BOOTSTRAP-->
+ 
+</body>
+</html>
